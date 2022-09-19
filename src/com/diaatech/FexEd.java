@@ -1,10 +1,9 @@
 package com.diaatech;
 
 public class FexEd implements DeliveryDriver{
-
+double rate;
 	@Override
 	public void calculateRate(double distance, int weight) {
-		double rate;
 	     if (distance > 500 ) {
 			  rate = rate + 5.00;
 		  }
@@ -14,11 +13,12 @@ public class FexEd implements DeliveryDriver{
 		  else{
 	           rate=20;
 		  }
-    System.out.println(rate);
+   System.out.println(rate);
 		
 	}
 		
 	}
+
 	 
 	
 
